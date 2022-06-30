@@ -2,14 +2,16 @@ import express from "express";
 
 const router = express.Router()
 
-const users = [
+const animals = [
   {
-    firstName: "John",
+    id: 1,
+    firstName: "dave",
     lastName: "Smith",
     age: 25
   },
   {
-    firstName: "Jane",
+    id: 2, 
+    firstName: "holly",
     lastName: "Smith",
     age: 24
   }
@@ -18,12 +20,10 @@ const users = [
 //all routes in here start with /users
 //browsers can only make get requests, for anything else use postman.
 router.get('/', (req, res) => {
-  res.send(users)
+  console.log(animals)
+  
+  res.send(animals)
 })
 
-router.post('/', (req, res) => {
-  console.log('post route reached')
-  res.send('post reached')
-})
 
 export default router
