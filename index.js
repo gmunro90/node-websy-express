@@ -14,5 +14,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`server 🏃🏽‍♂️ on port : http://localhost${PORT}`)
+  console.log(`server 🏃 on port : http://localhost${PORT}`)
 })
