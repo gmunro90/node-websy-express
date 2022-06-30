@@ -6,6 +6,14 @@ const PORT = 5000
 
 app.use(bodyParser.json())
 
+app.get('/', (req, res) => {
+  res.send('Hello from homepage')
+})
+
+app.get('/animals', (req, res) => {
+  res.send('testing animals page')
+})
+
 app.listen(PORT, () => {
   console.log(`server running on port : http://localhost${PORT}`)
 })
